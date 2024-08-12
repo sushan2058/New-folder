@@ -77,56 +77,77 @@
         Technology (BSc CSIT).Besides my studies, I am actively involved in
         Designing and usually spend my time improving these skills.
       </p>
-      <div class="list">
-        <div class="edu">
-          <h3>My education</h3>
-          <p>
-            Bsc.CSIT running at Texas Int'l College affiliated to Tribhuvan
-            University <br />
-            +2 science from Siddhartha Vanasthali Institute
-          </p>
+      <div class="list-parent">
+        <div class="list">
+          <div class="edu">
+            <h3>My education</h3>
+            <p>
+              Bsc.CSIT running at Texas Int'l College affiliated to Tribhuvan
+              University <br />
+              +2 science from Siddhartha Vanasthali Institute
+            </p>
+          </div>
+          <div>
+            <h3>Skils</h3>
+            <p>
+              Design Tools: Figma, Photoshop<br />
+              Front-End Development:HTML CSS JS (Basic)<br />
+              Version Control: Git, Github
+            </p>
+          </div>
         </div>
-        <div class="exp">
-          <h3>My Experience</h3>
-          <p>Made some projects starting with designing website.</p>
+        <div class="list">
+          <div class="exp">
+            <h3>My Experience</h3>
+            <p>Made some projects starting with designing website.</p>
+          </div>
+          <div class="achiv">
+            <h3>Certificate</h3>
+            <p>UI/UX Design Course at Codeit</p>
+            <p>August 2024</p>
+          </div>
         </div>
-      </div>
 
-      <div class="list2">
-        <div>
-          <h3>Skils</h3>
-          <p>
-            Design Tools: Figma, Photoshop<br />
-            Front-End Development:HTML CSS JS (Basic)<br />
-            Version Control: Git, Github
-          </p>
-        </div>
-        <div class="achiv">
-          <h3>Achievements</h3>
-          <p>designed different projects, <br /></p>
-        </div>
       </div>
     </section>
     <hr />
     <section class="project" id="project">
       <h1>My projects</h1>
       <div class="container">
-        <div class="container1">
-          <div class="portfolio" onclick="redirectToPortfolio()">
-            <button class="btn-body">Portfolio</button>
+        <div class="container-inside">
+          <div class="government-website-redesign" onclick="redirectToGovernmentWebsiteRedesign()">
+            <button class="btn-body">
+              Government Website Redesign
+            </button>
           </div>
-          <div class="School Website">
+        </div>
+        <div class="container-inside">
+          <div class="Dating-App" onclick="redirectToDatingApp()">
+            <button class="btn-body">
+              Dating App
+            </button>
+          </div>
+        </div>
+        <div class="container-inside">
+          <div class="School-Website">
             <button class="btn-body" onclick="redirectToSchoolWebsite()">
               School Website
             </button>
           </div>
-          <div class="Dating App" onclick="redirectToDatingApp()">
-            <button class="btn-body">Dating App</button>
+        </div>
+        <div class="container-inside">
+          <div class="task-manager" onclick="redirectToTaskManager()">
+            <button class="btn-body">
+              Task Manager
+            </button>
           </div>
-          <div class="Tabs Design System" onclick="redirectToTabsDesignSystem()">
-            <button class="btn-body">Tabs Design System</button>
+        </div>
+        <div class="container-inside">
+          <div class="Tabs-Design-System" onclick="redirectToTabsDesignSystem()">
+            <button class="btn-body">
+              Tabs Design System
+            </button>
           </div>
-          
         </div>
       </div>
       <script>
@@ -143,17 +164,20 @@
         function redirectToDatingApp() {
           window.location.href = "https://www.figma.com/file/Nq11cYWUmtpsAr7EBPYusq/Dating-App?type=design&node-id=0%3A1&mode=design&t=yrAuccl8QdQjDgrI-1";
         }
-             function redirectToTaskmanagerApp() {
-          window.location.href = "https://www.figma.com/file/ufGjdlvQxfGVfVFAmFcRxB/Task-Manager?type=design&node-id=0%3A1&mode=design&t=yQ5WyWEjf7dL5jZ0-1";
+        function redirectToTaskManager() {
+          window.location.href = "https://www.figma.com/design/ufGjdlvQxfGVfVFAmFcRxB/Task-Manager?node-id=0-1&t=Xx5KuIsO0da7K095-1";
+        }
+        function redirectToGovernmentWebsiteRedesign() {
+          window.location.href = "https://www.figma.com/design/DaQrAgCzSX86R4elPAzItA/Homepage?node-id=0-1&t=dGPzLQOfNuXnMKIl-1";
         }
       </script>
     </section>
     <hr />
     <section class="contact" id="contact">
-      <div class="container">
-        <h1>Contact me</h1>
+      <div class="list-parent">
 
         <div class="social">
+          <h1>Contact me</h1>
           <a
             href="https://www.facebook.com/profile.php?id=100024676213799"
             target="_blank"
@@ -174,11 +198,15 @@
 
         <div class="profile">
           <a>
-            9803447579</a>
+            <img src="https://www.svgrepo.com/show/304548/call.svg" />
+            9803447579
+          </a>
           <a>
+            <img src="https://www.svgrepo.com/show/223047/gmail.svg" />
             sushanpulami123@gmail.com
           </a>
           <a>
+            <img src="https://www.svgrepo.com/show/129908/location.svg" />
             Kathmandu, Nepal
           </a>
         </div>
