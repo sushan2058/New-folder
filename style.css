@@ -210,11 +210,17 @@ hr {
   color: #fff;
 }
 
-.list2,
+.list-parent{
+  display: flex;
+  padding: 0px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 .list {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   margin: 60px 0;
 }
 
@@ -230,7 +236,7 @@ hr {
     margin: 60px 0;
 } */
 .achiv {
-  padding-right: 157px;
+  /* padding-left: 0px; */
 }
 
 /* @media only screen and (max-width:px){
@@ -273,14 +279,19 @@ hr {
 
 .project {
   color: #00e8f8;
-  padding: 20px;
+  margin-right: 60px;
 }
 
-.container1,
-.container2 {
-  padding: 40px;
+.container{
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+
+.container-inside{
+  padding: 20px;
+  /* display: flex; */
 }
 
 button {
@@ -348,7 +359,8 @@ button a {
 }
 
 .profile {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 10px;
 }
 
@@ -356,12 +368,12 @@ button a {
   color: white;
   gap: 10px;
   display: flex;
-  align-items: left;
-  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .profile a img {
   color: #00e8f8;
-  width: 20px;
-  height: 10px;
+  width: 40px;
+  height: 20px;
 }
