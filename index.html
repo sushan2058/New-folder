@@ -191,34 +191,30 @@ improve user experience.
         }
       </script>
       <h1>Graphic Designs</h1>
-         <button onclick="openImage()">New Year 2082 Celebration Tour 1</button>
+         <button onclick="openImage('New Year 2082 Celebration Tour 1.png')">New Year 2082 Celebration Tour 1</button>
+    <button onclick="openImage('New Year 2082 Celebration Tour.png')">New Year 2082 Celebration Tour</button>
+    <button onclick="openImage('Holi At Trisuli.png')">Holi At Trisuli</button>
+    <button onclick="openImage('Tour package (1).png')">Tour Package</button>
+
+    <!-- Single Popup Container -->
     <div id="imageContainer" onclick="closeImage()">
         <span class="close-btn">&times;</span>
-        <img id="popupImage" src="New Year 2082 Celebration Tour 1.png" alt="Popup Image">
+        <img id="popupImage" src="" alt="Popup Image">
     </div>
-               <button onclick="openImage()">New Year 2082 Celebration Tour </button>
-    <div id="imageContainer" onclick="closeImage()">
-        <span class="close-btn">&times;</span>
-        <img id="popupImage" src="New Year 2082 Celebration Tour.png" alt="Popup Image">
-    </div>
-               <button onclick="openImage()">Holi At Trisuli</button>
-    <div id="imageContainer" onclick="closeImage()">
-        <span class="close-btn">&times;</span>
-        <img id="popupImage" src="Holi At Trisuli.png" alt="Popup Image">
-    </div>
-               <button onclick="openImage()">Tour package</button>
-    <div id="imageContainer" onclick="closeImage()">
-        <span class="close-btn">&times;</span>
-        <img id="popupImage" src="Tour package (1).png" alt="Popup Image">
-    </div>
-      <script>
-        function openImage() {
+
+    <script>
+        function openImage(imageSrc) {
+            document.getElementById("popupImage").src = imageSrc;
             document.getElementById("imageContainer").style.display = "flex";
         }
+
         function closeImage() {
             document.getElementById("imageContainer").style.display = "none";
         }
     </script>
+
+</body>
+</html>
     </section>
     <hr />
     <section class="contact" id="contact">
