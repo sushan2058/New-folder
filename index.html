@@ -40,7 +40,7 @@
             >
           </h1>
           <p>
-            UI/UX designer, <br />
+            UI/UX designer & Graphic Designer, <br />
             motivated and enthusiastic learner.
           </p>
           <div class="social">
@@ -114,8 +114,7 @@ improve user experience.
     </section>
     <hr />
     <section class="project" id="project">
-      <h1>My projects</h1>
-      <h1>UI/UX Designs</h1>
+      <h1>My projects (UI/UX Designs)</h1>
       <div class="container">
          <div class="container-inside">
           <div class="HamroBazar-website-redesign" onclick="redirectToHamroBazarProductDetailPageRedesign()">
@@ -192,6 +191,19 @@ improve user experience.
         }
       </script>
       <h1>Graphic Designs</h1>
+         <button onclick="openImage()">Open Image</button>
+    <div id="imageContainer" onclick="closeImage()">
+        <span class="close-btn">&times;</span>
+        <img id="popupImage" src="New Year 2082 Celebration Tour 1.png" alt="Popup Image">
+    </div>
+      <script>
+        function openImage() {
+            document.getElementById("imageContainer").style.display = "flex";
+        }
+        function closeImage() {
+            document.getElementById("imageContainer").style.display = "none";
+        }
+    </script>
     </section>
     <hr />
     <section class="contact" id="contact">
