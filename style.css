@@ -302,7 +302,7 @@ hr {
     gap: 20px; /* Space between elements */
     padding: 20px;
 }
-.box {
+.imageContainer {
     width: 250px;
     height: 150px;
     background-color: #1b1e22;
