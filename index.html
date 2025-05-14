@@ -9,7 +9,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Portfolio</title>
+    <title>Sushan Pulami | Portfolio</title>
   </head>
 
   <body>
@@ -26,7 +26,7 @@
       <nav>
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
-        <a href="#project">Project</a>
+        <a href="#project">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
@@ -35,249 +35,482 @@
       <div class="main">
         <div class="detail">
           <h1>
-            <span>Hi, It's Me</span> <br /><span style="color: #00e8f8"
-              >Sushan Pulami</span
-            >
+            <span>Hi, It's Me</span> <br /><span class="highlight">Sushan Pulami</span>
           </h1>
           <p>
             UI/UX designer | Graphic Designer, <br />
             motivated and enthusiastic learner.
           </p>
           <div class="social">
-            <a href="https://github.com/sushan2058" target="_blank"
-              ><i class="bi bi-github"></i
-            ></a>
-            <a href="https://www.instagram.com/sushanpulami/" target="_blank"
-              ><i class="bi bi-instagram"></i
-            ></a>
-            <a
-              href="https://www.linkedin.com/in/sushan-pulami-9820b5212/"
-              target="_blank"
-              ><i class="bi bi-linkedin"></i
-            ></a>
-            <a
-              href="https://www.facebook.com/profile.php?id=100024676213799"
-              target="_blank"
-              ><i class="bi bi-facebook"></i
-            ></a>
+            <a href="https://github.com/sushan2058" target="_blank" aria-label="GitHub">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.instagram.com/sushanpulami/" target="_blank" aria-label="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/sushan-pulami-9820b5212/" target="_blank" aria-label="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100024676213799" target="_blank" aria-label="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
           </div>
+          <a href="#project" class="cta-button">View My Work</a>
         </div>
         <div class="images">
-          <img src="pp.png" alt="" width="100%" style="border-radius: 50%" />
+          <img src="images/pp.png" alt="Sushan Pulami" class="profile-image" />
         </div>
       </div>
     </section>
 
-    <hr />
     <section class="about" id="about">
-      <h1>About me</h1>
-      <p>
+      <div class="section-header">
+        <h2>About Me</h2>
+        <div class="underline"></div>
+      </div>
+      <p class="about-text">
         Hi! I am Sushan Pulami, an undergraduate BSc. CSIT student passionate about creating intuitive user experiences. Responsible, hardworking, and
-eager to collaborate in dynamic environments. Skilled in solving user problems, and using modern tools to
-improve user experience.
+        eager to collaborate in dynamic environments. Skilled in solving user problems, and using modern tools to
+        improve user experience.
       </p>
-      <div class="list-parent">
-        <div class="list">
-          <div class="edu">
-            <h3>My education</h3>
-            <p>
-              Bsc.CSIT running at Texas Int'l College affiliated<br />
-              with Tribhuvan University <br />
-              +2 science from Siddhartha Vanasthali Institute
-            </p>
-          </div>
-          <div class="edu">
-            <h3>Skils</h3>
-            <p>
-              Design Tools: Figma, Photoshop, Canva, Illustrator
-            </p>
-          </div>
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="card-icon"><i class="bi bi-mortarboard"></i></div>
+          <h3>Education</h3>
+          <p>
+            Bsc.CSIT running at Texas Int'l College affiliated<br />
+            with Tribhuvan University <br />
+            +2 science from Siddhartha Vanasthali Institute
+          </p>
         </div>
-        <div class="list">
-          <div class="edu">
-            <h3>My Experience</h3>
-            <p>
-              Made some projects starting with <br />
-              designing website.
-            </p>
-          </div>
-          <div class="edu">
-            <h3>Certificate</h3>
-            <p>
-              UI/UX Design Course at Codeit<br />
-              August 2024
-            </p>
-          </div>
+        <div class="about-card">
+          <div class="card-icon"><i class="bi bi-tools"></i></div>
+          <h3>Skills</h3>
+          <p>
+            Design Tools: Figma, Photoshop, Canva, Illustrator
+          </p>
         </div>
-
+        <div class="about-card">
+          <div class="card-icon"><i class="bi bi-briefcase"></i></div>
+          <h3>Experience</h3>
+          <p>
+            Made some projects starting with <br />
+            designing website.
+          </p>
+        </div>
+        <div class="about-card">
+          <div class="card-icon"><i class="bi bi-award"></i></div>
+          <h3>Certificate</h3>
+          <p>
+            UI/UX Design Course at Codeit<br />
+            August 2024
+          </p>
+        </div>
       </div>
     </section>
-    <hr />
+
     <section class="project" id="project">
-      <h1>My projects (UI/UX Designs)</h1>
-      <div class="container">
-         <div class="container-inside">
-          <div class="HamroBazar-website-redesign" onclick="redirectToHamroBazarProductDetailPageRedesign()">
-            <button class="btn-body">
-              Hamro Bazar Product Detail Page Redesign
-            </button>
+      <div class="section-header">
+        <h2>My Projects</h2>
+        <div class="underline"></div>
+      </div>
+      
+      <div class="project-tabs">
+        <button class="tab-btn active" data-tab="uiux">UI/UX Designs</button>
+        <button class="tab-btn" data-tab="graphic">Graphic Designs</button>
+      </div>
+
+      <div class="tab-content active" id="uiux-tab">
+        <div class="project-grid">
+          <div class="project-card" onclick="redirectToHamroBazarProductDetailPageRedesign()">
+            <div class="project-card-content">
+              <h3>Hamro Bazar Product Detail Page Redesign</h3>
+              <p>UI/UX redesign for improved product details page</p>
+              <div class="project-card-overlay">
+                <span>View Project</span>
+              </div>
+            </div>
           </div>
-        </div>
-         <div class="container-inside">
-          <div class="government-website-redesign" onclick="redirectToGovernmentWebsiteRedesign()">
-            <button class="btn-body">
-              Government Website Redesign
-            </button>
+          
+          <div class="project-card" onclick="redirectToGovernmentWebsiteRedesign()">
+            <div class="project-card-content">
+              <h3>Government Website Redesign</h3>
+              <p>Modern redesign of government portal</p>
+              <div class="project-card-overlay">
+                <span>View Project</span>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="container-inside">
-          <div class="Ride-sharing-Food-Parcel-Delivary-website-" onclick="redirectToRidesharingFoodParcelDelivarywebsite()">
-            <button class="btn-body">
-              Zaaou Nepal (Ride sharing, Food & Parcel Delivary website)
-            </button>
+          
+          <div class="project-card" onclick="redirectToRidesharingFoodParcelDelivarywebsite()">
+            <div class="project-card-content">
+              <h3>Zaaou Nepal</h3>
+              <p>Ride sharing, Food & Parcel Delivery website</p>
+              <div class="project-card-overlay">
+                <span>View Project</span>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="container-inside">
-          <div class="Dating-App" onclick="redirectToDatingApp()">
-            <button class="btn-body">
-              Dating App(Group Project)
-            </button>
+          
+          <div class="project-card" onclick="redirectToDatingApp()">
+            <div class="project-card-content">
+              <h3>Dating App</h3>
+              <p>Group Project</p>
+              <div class="project-card-overlay">
+                <span>View Project</span>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="container-inside">
-          <div class="School-Website">
-            <button class="btn-body" onclick="redirectToSchoolWebsite()">
-              School Website
-            </button>
+          
+          <div class="project-card" onclick="redirectToSchoolWebsite()">
+            <div class="project-card-content">
+              <h3>School Website</h3>
+              <p>Educational institution website design</p>
+              <div class="project-card-overlay">
+                <span>View Project</span>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="container-inside">
-          <div class="task-manager" onclick="redirectToTaskManager()">
-            <button class="btn-body">
-              Task Manager
-            </button>
+          
+          <div class="project-card" onclick="redirectToTaskManager()">
+            <div class="project-card-content">
+              <h3>Task Manager</h3>
+              <p>Productivity app design</p>
+              <div class="project-card-overlay">
+                <span>View Project</span>
+              </div>
+            </div>
           </div>
-        </div>
-          <div class="container-inside">
-          <div class="User-Persona" onclick="redirectToUserPersona()">
-            <button class="btn-body">
-              User Persona
-            </button>
+          
+          <div class="project-card" onclick="redirectToUserPersona()">
+            <div class="project-card-content">
+              <h3>User Persona</h3>
+              <p>User research and persona development</p>
+              <div class="project-card-overlay">
+                <span>View Project</span>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="container-inside">
-          <div class="Tabs-Design-System" onclick="redirectToTabsDesignSystem()">
-            <button class="btn-body">
-              Tabs Design System
-            </button>
+          
+          <div class="project-card" onclick="redirectToTabsDesignSystem()">
+            <div class="project-card-content">
+              <h3>Tabs Design System</h3>
+              <p>Component design system</p>
+              <div class="project-card-overlay">
+                <span>View Project</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <script>
-         function redirectToHamroBazarProductDetailPageRedesign() {
-          window.location.href = "https://www.figma.com/design/qOB9Hz3zeXyDIi4gldqmsX/Hamro-Bazar-(Product-Details-Page)?node-id=1-2&t=N4lGYBQRpFIXFD8H-0";
-        }
-           function redirectToRidesharingFoodParcelDelivarywebsite() {
-          window.location.href = "https://www.figma.com/design/9r9Hwn3E3KrVYWRTErb0pW/Zaaou-Nepal?node-id=0-1&p=f&t=ErRs2HmpVr4lsRub-0";
-        }
-         function redirectToTabsDesignSystem() {
-          window.location.href = "https://www.figma.com/file/uOt0bdhrSmmE3wwXxq7Dp5/Tabs-Design-System?type=design&node-id=0%3A1&mode=design&t=G8rMRk2fN8KeRTjX-1";
-        }
-        function redirectToSchoolWebsite() {
-          window.location.href =
-            "https://www.figma.com/file/1dU9H4aACOvprUnAjJ2gqE/School-Website?type=design&node-id=0%3A1&mode=design&t=o2zyFimAOiyUpHFW-1";
-        }
-        function redirectToDatingApp() {
-          window.location.href = "https://www.figma.com/file/Nq11cYWUmtpsAr7EBPYusq/Dating-App?type=design&node-id=0%3A1&mode=design&t=yrAuccl8QdQjDgrI-1";
-        }
-        function redirectToTaskManager() {
-          window.location.href = "https://www.figma.com/design/ufGjdlvQxfGVfVFAmFcRxB/Task-Manager?node-id=0-1&t=Xx5KuIsO0da7K095-1";
-        }
-                function redirectToUserPersona() {
-          window.location.href = "https://www.figma.com/design/AiuAW4kz10zhvLKz3Qf0O0/User-Persona?node-id=0-1&t=EddsN9C80n5ZtRVA-1";
-        }
-        function redirectToGovernmentWebsiteRedesign() {
-          window.location.href = "https://www.figma.com/design/DaQrAgCzSX86R4elPAzItA/Homepage?node-id=0-1&t=dGPzLQOfNuXnMKIl-1";
-        }
-      </script>
-      <h1>Graphic Designs</h1>
-   <div class='container'>
-      <button onclick="openImage('Buddha Jayanti.png')">MSP Solution Buddha Jayanti</button>
-      <button onclick="openImage('Shofydrop Buddha jayantii.png')">Shofydrop Buddha jayantii</button>
-    <button onclick="openImage('Standee Star Hospital.png')">Standee Star Hospital</button>
-    <button onclick="openImage('Know ur Doctor.png')">Star Hospital Doctor Details</button>
-      <button onclick="openImage('geriatric@starhospital.png')">geriatric@starhospital Standee</button>
-      <button onclick="openImage('MSP Solution Labour Day.png')">MSP Solution Labour Day</button>
-      <button onclick="openImage('Labour day Shofydrop.png')">ShofyDrop Labour day </button>
-    <button onclick="openImage('Shofydrop Post 2.png')">ShofyDrop promotional design 3</button>
-    <button onclick="openImage('Shofydrop post 1.png')">ShofyDrop promotional design 2</button>
-    <button onclick="openImage('Shofydrop.png')">ShofyDrop promotional design 1</button>
-    <button onclick="openImage('MSP Solution Service.png')">MSP Solution Service</button>
-    <button onclick="openImage('New Year 2082 Celebration Tour 1.png')">New Year 2082 Celebration Tour 1</button>
-    <button onclick="openImage('New Year 2082 Celebration Tour.png')">New Year 2082 Celebration Tour</button>
-    <button onclick="openImage('Holi At Trisuli.png')">Holi At Trisuli</button>
-    <button onclick="openImage('Tour package (1).png')">Tour Package</button>
-    <button onclick="openImage('Discount Offer.png')">Discount Offer</button>
-    <button onclick="openImage('ShofyDrop offer.png')">ShofyDrop offer</button> 
-   </div>
-     
 
-    <div id="imageContainer" onclick="closeImage()">
-        <span class="close-btn">&times;</span>
-        <img id="popupImage" src="" alt="Popup Image">
-    </div>
+      <div class="tab-content" id="graphic-tab">
+        <div class="gallery">
+          <div class="gallery-item" onclick="openImage('images/Buddha Jayanti.png')">
+            <div class="gallery-item-content">
+              <img src="images/Buddha Jayanti.png" alt="MSP Solution Buddha Jayanti" />
+              <div class="gallery-item-overlay">
+                <span>MSP Solution Buddha Jayanti</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-item" onclick="openImage('images/Shofydrop Buddha jayantii.png')">
+            <div class="gallery-item-content">
+              <img src="images/Shofydrop Buddha jayantii.png" alt="Shofydrop Buddha jayantii" />
+              <div class="gallery-item-overlay">
+                <span>Shofydrop Buddha jayantii</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-item" onclick="openImage('images/Standee Star Hospital.png')">
+            <div class="gallery-item-content">
+              <img src="images/Standee Star Hospital.png" alt="Standee Star Hospital" />
+              <div class="gallery-item-overlay">
+                <span>Standee Star Hospital</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-item" onclick="openImage('images/Know ur Doctor.png')">
+            <div class="gallery-item-content">
+              <img src="images/Know ur Doctor.png" alt="Star Hospital Doctor Details" />
+              <div class="gallery-item-overlay">
+                <span>Star Hospital Doctor Details</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-item" onclick="openImage('images/geriatric@starhospital.png')">
+            <div class="gallery-item-content">
+              <img src="images/geriatric@starhospital.png" alt="geriatric@starhospital Standee" />
+              <div class="gallery-item-overlay">
+                <span>geriatric@starhospital Standee</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-item" onclick="openImage('images/MSP Solution Labour Day.png')">
+            <div class="gallery-item-content">
+              <img src="images/MSP Solution Labour Day.png" alt="MSP Solution Labour Day" />
+              <div class="gallery-item-overlay">
+                <span>MSP Solution Labour Day</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-item" onclick="openImage('images/Labour day Shofydrop.png')">
+            <div class="gallery-item-content">
+              <img src="images/Labour day Shofydrop.png" alt="ShofyDrop Labour day" />
+              <div class="gallery-item-overlay">
+                <span>ShofyDrop Labour day</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-item" onclick="openImage('images/Shofydrop Post 2.png')">
+            <div class="gallery-item-content">
+              <img src="images/Shofydrop Post 2.png" alt="ShofyDrop promotional design 3" />
+              <div class="gallery-item-overlay">
+                <span>ShofyDrop promotional design 3</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-item" onclick="openImage('images/Shofydrop post 1.png')">
+            <div class="gallery-item-content">
+              <img src="images/Shofydrop post 1.png" alt="ShofyDrop promotional design 2" />
+              <div class="gallery-item-overlay">
+                <span>ShofyDrop promotional design 2</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-item" onclick="openImage('images/Shofydrop.png')">
+            <div class="gallery-item-content">
+              <img src="images/Shofydrop.png" alt="ShofyDrop promotional design 1" />
+              <div class="gallery-item-overlay">
+                <span>ShofyDrop promotional design 1</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-item" onclick="openImage('images/MSP Solution Service.png')">
+            <div class="gallery-item-content">
+              <img src="images/MSP Solution Service.png" alt="MSP Solution Service" />
+              <div class="gallery-item-overlay">
+                <span>MSP Solution Service</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-item" onclick="openImage('images/New Year 2082 Celebration Tour 1.png')">
+            <div class="gallery-item-content">
+              <img src="images/New Year 2082 Celebration Tour 1.png" alt="New Year 2082 Celebration Tour 1" />
+              <div class="gallery-item-overlay">
+                <span>New Year 2082 Celebration Tour 1</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-item" onclick="openImage('images/New Year 2082 Celebration Tour.png')">
+            <div class="gallery-item-content">
+              <img src="images/New Year 2082 Celebration Tour.png" alt="New Year 2082 Celebration Tour" />
+              <div class="gallery-item-overlay">
+                <span>New Year 2082 Celebration Tour</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-item" onclick="openImage('images/Holi At Trisuli.png')">
+            <div class="gallery-item-content">
+              <img src="images/Holi At Trisuli.png" alt="Holi At Trisuli" />
+              <div class="gallery-item-overlay">
+                <span>Holi At Trisuli</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-item" onclick="openImage('images/Tour package (1).png')">
+            <div class="gallery-item-content">
+              <img src="images/Tour package (1).png" alt="Tour Package" />
+              <div class="gallery-item-overlay">
+                <span>Tour Package</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-item" onclick="openImage('images/Discount Offer.png')">
+            <div class="gallery-item-content">
+              <img src="images/Discount Offer.png" alt="Discount Offer" />
+              <div class="gallery-item-overlay">
+                <span>Discount Offer</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-item" onclick="openImage('images/ShofyDrop offer.png')">
+            <div class="gallery-item-content">
+              <img src="images/ShofyDrop offer.png" alt="ShofyDrop offer" />
+              <div class="gallery-item-overlay">
+                <span>ShofyDrop offer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="modalCaption"></div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="section-header">
+        <h2>Contact Me</h2>
+        <div class="underline"></div>
+      </div>
+      
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="bi bi-telephone"></i>
+            <p>9803447579</p>
+          </div>
+          <div class="contact-item">
+            <i class="bi bi-envelope"></i>
+            <p>sushanpulami123@gmail.com</p>
+          </div>
+          <div class="contact-item">
+            <i class="bi bi-geo-alt"></i>
+            <p>Kathmandu, Nepal</p>
+          </div>
+        </div>
+        
+        <div class="contact-social">
+          <a href="https://www.facebook.com/profile.php?id=100024676213799" target="_blank" aria-label="Facebook">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/sushanpulami/" target="_blank" aria-label="Instagram">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/sushan-pulami-9820b5212/" target="_blank" aria-label="LinkedIn">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="https://github.com/sushan2058" target="_blank" aria-label="GitHub">
+            <i class="bi bi-github"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    <footer>
+      <p>&copy; 2024 Sushan Pulami. All rights reserved.</p>
+    </footer>
 
     <script>
-        function openImage(imageSrc) {
-            document.getElementById("popupImage").src = imageSrc;
-            document.getElementById("imageContainer").style.display = "flex";
+      // Project redirection functions
+      function redirectToHamroBazarProductDetailPageRedesign() {
+        window.location.href = "https://www.figma.com/design/qOB9Hz3zeXyDIi4gldqmsX/Hamro-Bazar-(Product-Details-Page)?node-id=1-2&t=N4lGYBQRpFIXFD8H-0";
+      }
+      
+      function redirectToRidesharingFoodParcelDelivarywebsite() {
+        window.location.href = "https://www.figma.com/design/9r9Hwn3E3KrVYWRTErb0pW/Zaaou-Nepal?node-id=0-1&p=f&t=ErRs2HmpVr4lsRub-0";
+      }
+      
+      function redirectToTabsDesignSystem() {
+        window.location.href = "https://www.figma.com/file/uOt0bdhrSmmE3wwXxq7Dp5/Tabs-Design-System?type=design&node-id=0%3A1&mode=design&t=G8rMRk2fN8KeRTjX-1";
+      }
+      
+      function redirectToSchoolWebsite() {
+        window.location.href = "https://www.figma.com/file/1dU9H4aACOvprUnAjJ2gqE/School-Website?type=design&node-id=0%3A1&mode=design&t=o2zyFimAOiyUpHFW-1";
+      }
+      
+      function redirectToDatingApp() {
+        window.location.href = "https://www.figma.com/file/Nq11cYWUmtpsAr7EBPYusq/Dating-App?type=design&node-id=0%3A1&mode=design&t=yrAuccl8QdQjDgrI-1";
+      }
+      
+      function redirectToTaskManager() {
+        window.location.href = "https://www.figma.com/design/ufGjdlvQxfGVfVFAmFcRxB/Task-Manager?node-id=0-1&t=Xx5KuIsO0da7K095-1";
+      }
+      
+      function redirectToUserPersona() {
+        window.location.href = "https://www.figma.com/design/AiuAW4kz10zhvLKz3Qf0O0/User-Persona?node-id=0-1&t=EddsN9C80n5ZtRVA-1";
+      }
+      
+      function redirectToGovernmentWebsiteRedesign() {
+        window.location.href = "https://www.figma.com/design/DaQrAgCzSX86R4elPAzItA/Homepage?node-id=0-1&t=dGPzLQOfNuXnMKIl-1";
+      }
+      
+      // Image modal functionality
+      function openImage(src) {
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImage");
+        const captionText = document.getElementById("modalCaption");
+        
+        modal.style.display = "block";
+        modalImg.src = src;
+        
+        // Extract filename for caption
+        const filename = src.split('/').pop();
+        captionText.innerHTML = filename.replace('.png', '').replace(/[-_]/g, ' ');
+      }
+      
+      // Close modal when clicking the × button
+      document.querySelector(".close-modal").onclick = function() {
+        document.getElementById("imageModal").style.display = "none";
+      }
+      
+      // Close modal when clicking outside the image
+      window.onclick = function(event) {
+        const modal = document.getElementById("imageModal");
+        if (event.target == modal) {
+          modal.style.display = "none";
         }
-
-        function closeImage() {
-            document.getElementById("imageContainer").style.display = "none";
-        }
+      }
+      
+      // Tab functionality
+      const tabBtns = document.querySelectorAll('.tab-btn');
+      const tabContents = document.querySelectorAll('.tab-content');
+      
+      tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          // Remove active class from all buttons and contents
+          tabBtns.forEach(b => b.classList.remove('active'));
+          tabContents.forEach(c => c.classList.remove('active'));
+          
+          // Add active class to clicked button
+          btn.classList.add('active');
+          
+          // Show corresponding content
+          const tabId = btn.getAttribute('data-tab');
+          document.getElementById(`${tabId}-tab`).classList.add('active');
+        });
+      });
+      
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          const targetId = this.getAttribute('href');
+          const targetElement = document.querySelector(targetId);
+          
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 80,
+              behavior: 'smooth'
+            });
+            
+            // Close mobile menu if open
+            document.getElementById('click').checked = false;
+          }
+        });
+      });
     </script>
-
-</body>
-</html>
-    </section>
-    <hr />
-    <section class="contact" id="contact">
-      <div class="list-parent2">
-        <h1>Contact me</h1>
-
-        <div class="social">
-          <a
-            href="https://www.facebook.com/profile.php?id=100024676213799"
-            target="_blank"
-            ><i class="bi bi-facebook"></i
-          ></a>
-          <a href="https://www.instagram.com/sushanpulami/" target="_blank"
-            ><i class="bi bi-instagram"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/sushan-pulami-9820b5212/"
-            target="_blank"
-            ><i class="bi bi-linkedin"></i
-          ></a>
-          <a href="https://github.com/sushan2058" target="_blank"
-            ><i class="bi bi-github"></i
-          ></a>
-        </div>
-
-        <div class="profile">
-          <a>
-            9803447579
-          </a>
-          <a>
-            sushanpulami123@gmail.com
-          </a>
-          <a>
-            Kathmandu, Nepal
-          </a>
-        </div>
-      </div>
-    </section>
   </body>
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
